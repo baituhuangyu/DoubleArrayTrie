@@ -1,5 +1,6 @@
 from . import pydat
 
+
 class Dat(object):
     def __init__(self):
         self.__dat_c = pydat.DoubleArrayTrie()

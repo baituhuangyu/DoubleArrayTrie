@@ -18,6 +18,13 @@ function `maximum_search` returns all subsequences
     maximum_search: 
     {'entities': [{'begin': 0, 'end': 3, 'entity': 'she'}, {'begin': 0, 'end': 4, 'entity': 'sher'}, {'begin': 0, 'end': 5, 'entity': 'shers'}, {'begin': 1, 'end': 3, 'entity': 'he'}]}
 
+## platform
+
+  | python | OS | status |
+  | ----- | ---- | ---- |
+  | ubuntu | python2 | ok |
+  | ubuntu | python3 | ok |
+  | macos | python3.7 | ok |
 
 
 ### C++
@@ -63,6 +70,42 @@ base[s] + c = t
 
 Reference: [An implementation of Double-Array Trie](https://linux.thai.net/~thep/datrie/datrie.html#Double)
 
+### install step
+#### For most, run cmd below.
+- git clone
+
+- python setup install
+
+#### build `new` libboost_python
+- Should ignore this part for most.
+
+- If you need to build `new` libboost_python for your `new` env/os/python.
+
+- 1. build libboost_python, like this:
+
+- step 1) run bootstrap.sh, configure
+
+./bootstrap.sh \
+--prefix=./build/ \
+--with-libraries=python \
+--with-python=/PATH/TO/bin/python \
+--with-python-root=/PATH/TO/PYTHON_ROOT/ \
+--with-python-version=3.7
+
+- step 2) build
+
+./b2 install --prefix=./build/
+
+- step 3) copy files
+
+cp build/lib/libboost_python37.dylib /PATH/TO/YOUR/DoubleArrayTriepydat/pydat/
+
+- step 4) build & install pydat
+
+
+### 2020.07.30
+- support macos
+- fix can't find libboost_python3.dylib on Darwin platform
 
 ### Update Log
 

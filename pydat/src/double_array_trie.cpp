@@ -381,7 +381,7 @@ void DoubleArrayTrie::load_file(const string& file_name){
 int main(){
     DoubleArrayTrie dat;
     // dat.load_file("test.txt");
-    dat.load_file("/home/ubuntu/SocialCredits/CompanyName/short");
+//    dat.load_file("/home/ubuntu/SocialCredits/CompanyName/short");
     dat.add_word("派特尔");
     dat.add_word("海天味业");
 

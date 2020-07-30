@@ -11,4 +11,6 @@ clean:
 	rm $(objects)
 
 CPP=g++
+# for macos
+# LDFLAGS="-Wl,-rpath,/PATH/TO/LIB/lib/python3.7/site-packages/pydat"
 CPPFLAGS=-std=c++11 -g
