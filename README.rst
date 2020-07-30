@@ -1,3 +1,7 @@
+
+forked from https://github.com/yanwii/DoubleArrayTrie
+
+
 ## DoubleArrayTrie
 
 DoubleArrayTrie(DAT) support prefix search & exact search & multiple pattern match for python implemented by c++

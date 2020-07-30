@@ -1,4 +1,4 @@
-forked from yanwii/DoubleArrayTrie
+forked from https://github.com/yanwii/DoubleArrayTrie
 
 ## DoubleArrayTrie
 
