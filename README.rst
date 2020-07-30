@@ -72,7 +72,9 @@ Reference: [An implementation of Double-Array Trie](https://linux.thai.net/~thep
 
 ### install step
 #### For most, run cmd below.
-- git clone
+-  libboost_python37 boost version 1_73_0
+
+- git clone https://github.com/baituhuangyu/DoubleArrayTrie.git
 
 - python setup install
 
@@ -99,6 +101,12 @@ Reference: [An implementation of Double-Array Trie](https://linux.thai.net/~thep
 - step 3) copy files
 
 cp build/lib/libboost_python37.dylib /PATH/TO/YOUR/DoubleArrayTriepydat/pydat/
+
+cp build/lib/libboost_python37.dylib /PATH/TO/YOUR/DoubleArrayTrie/pydat/pydat/
+
+#rm -rf /PATH/TO/YOUR/DoubleArrayTrie/pydat/include/
+
+cp build/include/ /PATH/TO/YOUR/DoubleArrayTrie/pydat/include/
 
 - step 4) build & install pydat
 
